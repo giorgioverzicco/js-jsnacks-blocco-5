@@ -17,3 +17,15 @@ for (let i = 0; i < zuchini.length; i++) {
     shortZuchini.push(zuchini[i].length);
   }
 }
+
+let sumShort = 0;
+for (let i = 0; i < shortZuchini.length; i++) {
+  sumShort += shortZuchini[i].weight;
+}
+
+let sumLong = 0;
+for (let i = 0; i < longZuchini.length; i++) {
+  sumLong += longZuchini[i].weight;
+}
+
+console.log(sumShort, sumLong);
