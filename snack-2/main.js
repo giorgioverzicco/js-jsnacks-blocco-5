@@ -9,23 +9,17 @@ for (let i = 1; i <= 10; i++) {
 
 const shortZuchini = [];
 const longZuchini = [];
+let sumLong = 0;
+let sumShort = 0;
 
 for (let i = 0; i < zuchini.length; i++) {
   if (zuchini[i].length >= 15) {
     longZuchini.push(zuchini[i].length);
+    sumLong += zuchini[i].weight;
   } else {
     shortZuchini.push(zuchini[i].length);
+    sumShort += zuchini[i].weight;
   }
-}
-
-let sumShort = 0;
-for (let i = 0; i < shortZuchini.length; i++) {
-  sumShort += shortZuchini[i].weight;
-}
-
-let sumLong = 0;
-for (let i = 0; i < longZuchini.length; i++) {
-  sumLong += longZuchini[i].weight;
 }
 
 console.log(sumShort, sumLong);
