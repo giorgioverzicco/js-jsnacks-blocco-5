@@ -16,7 +16,7 @@ const cars = [
   },
   {
     brand: "Opel",
-    model: "Corsa",
+    model: "Insignia",
     fuelType: "diesel",
   },
   {
